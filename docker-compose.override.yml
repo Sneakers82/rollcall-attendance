@@ -5,6 +5,8 @@ services:
     build:
       args:
         DEV_BUILD: 'true'
+    ports:
+      - "8080:80"
     env_file: .env
     environment:
       DEV_BUILD: 'true'

@@ -17,6 +17,9 @@
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  # Set Development Server
+  config.hosts << ENV.fetch('DEVELOPMENT_HOST', 'localhost')
+
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
